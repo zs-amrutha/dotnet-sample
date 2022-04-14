@@ -27,6 +27,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: niharika0606/quixy:v1
+          tags: harish0717/quixy:v1
     
   
