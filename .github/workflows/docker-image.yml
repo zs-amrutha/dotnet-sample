@@ -25,7 +25,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
-          context: /.
+          context: .
           push: true
           tags: niharika0606/quixy:v1
     
