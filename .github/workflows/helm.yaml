@@ -14,7 +14,7 @@ jobs:
        - name: 'build and push helm chart'
          run: |
           export HELM_EXPERIMENTAL_OCI=1
-          export GITHUB_TOKEN =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
+          export GITHUB_TOKEN =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
           echo $GITHUB_TOKEN | helm registry login https://ghcr.io --username zs-amrutha --password-stdin
           cd helm
           helm package .
