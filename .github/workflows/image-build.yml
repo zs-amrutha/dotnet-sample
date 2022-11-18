@@ -17,7 +17,7 @@ jobs:
            docker build -t ghcr.io/zs-amrutha/dotnet -f Dockerfile .
        - name: 'docker login'
          run: |
-           docker login -u zs-amrutha -p $TOKEN ghcr.io
+           docker login -u zs-amrutha -p ${{ secrets.TOKEN }} ghcr.io
        - name: 'docker push'
          run: |
            docker push ghcr.io/zs-amrutha/dotnet     
