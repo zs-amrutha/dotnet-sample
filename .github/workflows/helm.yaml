@@ -14,7 +14,7 @@ jobs:
        - name: 'build and push helm chart'
          run: |
           # export HELM_EXPERIMENTAL_OCI=1
-          echo TOKEN | helm registry login https://ghcr.io --username zs-amrutha --password-stdin
+          echo $TOKEN | helm registry login https://ghcr.io --username zs-amrutha --password-stdin
           cd helm
           helm package .
           helm push *.tgz oci://ghcr.io/zs-amrutha
